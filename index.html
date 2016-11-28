@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Florencia De Vuono / Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Simon Game</h1>
+
+    <div id="game">
+      <div id="board">
+        <div id="colors" class="colors">
+          <div id="blue" class="gameButton" onclick="addColorToPlayer(this.id)"></div>
+          <div id="pink" class="gameButton" onclick="addColorToPlayer(this.id)"></div>
+          <div id="yellow" class="gameButton" onclick="addColorToPlayer(this.id)"></div>
+          <div id="green" class="gameButton" onclick="addColorToPlayer(this.id)"></div>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <div id="buttons" class="row">
+        <button id="start">START GAME</button>
+        <div class="switch">
+          <label>
+            <p id="strict-label">STRICT MODE (check always)<input type="checkbox" id="strict"></p>
+          </label>
+        </div>
+      </div>
+      <div class="count center">
+        <h4 id="count-num">0</h4>
+      </div>
+    </div>
+   <div id="message">
+    <div id="result"></div>
+    <a href="#" id="reset-game"></a>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
